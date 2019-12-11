@@ -15,4 +15,10 @@ Using Phaser v3.21.0 and Spine v3.8.78
 
 [Play the demo](https://s3.eu-central-1.amazonaws.com/phaser3-typescript/spine-example/index.html)
 
-![screenshot](screenshots/screenshot.png)
+[![screenshot](screenshots/screenshot.png)](https://s3.eu-central-1.amazonaws.com/phaser3-typescript/spine-example/index.html)
+
+## Phaser Starter Template
+
+Looking for a powerful Phaser Starter Template?
+
+Try [phaser-project-template](https://github.com/yandeu/phaser-project-template) or [phaser-project-template-es6](https://github.com/yandeu/phaser-project-template-es6)
