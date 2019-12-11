@@ -1,6 +1,6 @@
 # Phaser 3 Spine Example
 
-Using Phaser v3.16.0-rc3
+Using Phaser v3.21.0
 
 - Change Skins
 - Change Animations
