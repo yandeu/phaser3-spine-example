@@ -1,4 +1,8 @@
-# Phaser 3 Spine Example
+<h1 align="center">
+  <br>
+  Phaser 3 Spine Example
+  <br>
+</h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/package-json/v/yandeu/phaser3-spine-example.svg?style=flat-square" alt="GitHub package.json version">
@@ -15,7 +19,8 @@ Using Phaser v3.21.0 and Spine v3.8.78
 
 [Play the demo](https://s3.eu-central-1.amazonaws.com/phaser3-typescript/spine-example/index.html)
 
-[![screenshot](screenshots/screenshot.png)](https://s3.eu-central-1.amazonaws.com/phaser3-typescript/spine-example/index.html)
+<a href="https://s3.eu-central-1.amazonaws.com/phaser3-typescript/spine-example/index.html"><img src="screenshots/screenshot.png" alt="header" width="452"></a>
+
 
 ## Phaser Starter Template
 
