@@ -13,9 +13,8 @@ const config = {
   plugins: {
     scene: [
       {
-        key: 'SpineWebGLPlugin',
-        plugin: SpineWebGLPlugin,
-        start: true,
+        key: 'SpinePlugin',
+        plugin: window.SpinePlugin,
         sceneKey: 'spine'
       }
     ]

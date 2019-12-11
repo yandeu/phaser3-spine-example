@@ -1,3 +1,5 @@
+import button from './button.js'
+
 var goblin
 let skins = ['goblin', 'goblingirl']
 let attachments = ['spear', 'dagger', null]
@@ -14,7 +16,7 @@ class MainScene extends Phaser.Scene {
     this.load.image('attachment', 'btn/attachment.png')
 
     this.load.setPath('spine/')
-    this.load.spine('goblin', 'goblins-ess.json', 'goblins-ess.atlas')
+    this.load.spine('goblin', 'goblins.json', 'goblins.atlas')
   }
 
   create() {
@@ -39,36 +41,23 @@ class MainScene extends Phaser.Scene {
       goblin.play(animation, loop)
     }
 
-    // add change skin button
-    this.add
-      .image(120, 50, 'skin')
-      .setInteractive()
-      .on('pointerdown', () => {
-        let index = (goblin.customParams.skin += 1)
-        let skin = skins[index % skins.length]
-        setSkin(skin)
-      })
-
-    // add change animation button
-    this.add
-      .image(360, 50, 'animation')
-      .setInteractive()
-      .on('pointerdown', () => {
-        let index = (goblin.customParams.animation += 1)
-        let animation = animations[index % animations.length]
-        setAnimation(animation, true)
-      })
-
-    // add change attachment button
-    this.add
-      .image(600, 50, 'attachment')
-      .setInteractive()
-      .on('pointerdown', () => {
-        let index = (goblin.customParams.attachment += 1)
-        let slot = 'left-hand-item'
-        let attachment = attachments[index % attachments.length]
-        setAttachment(slot, attachment)
-      })
+    // add buttons
+    button(this, 120, 50, 'skin', () => {
+      let index = (goblin.customParams.skin += 1)
+      let skin = skins[index % skins.length]
+      setSkin(skin)
+    })
+    button(this, 360, 50, 'animation', () => {
+      let index = (goblin.customParams.animation += 1)
+      let animation = animations[index % animations.length]
+      setAnimation(animation, true)
+    })
+    button(this, 600, 50, 'attachment', () => {
+      let index = (goblin.customParams.attachment += 1)
+      let slot = 'left hand item'
+      let attachment = attachments[index % attachments.length]
+      setAttachment(slot, attachment)
+    })
 
     // add the goblin
     goblin = this.add.spine(400, 600, 'goblin', 'walk', true)
@@ -80,6 +69,9 @@ class MainScene extends Phaser.Scene {
     setSkin('goblin')
     goblin.setMix('walk', 'idle', 0.3)
     goblin.setMix('idle', 'walk', 0.3)
+
+    // remove dagger in right hand
+    setAttachment('right hand item', null)
 
     console.log('Attachments: ', getAttachments())
     console.log('Slots: ', getSlots())
