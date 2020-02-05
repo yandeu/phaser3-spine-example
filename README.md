@@ -10,7 +10,6 @@
   <a href="https://github.com/prettier/prettier" alt="code style: prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
 </p>
 
-
 Using Phaser v3.21.0 and Spine v3.8.78
 
 - Change Skins
@@ -21,6 +20,9 @@ Using Phaser v3.21.0 and Spine v3.8.78
 
 <a href="https://s3.eu-central-1.amazonaws.com/phaser3-typescript/spine-example/index.html"><img src="screenshots/screenshot.png" alt="header" width="452"></a>
 
+## Questions?
+
+Take a look at the [topic #1042](https://phaser.discourse.group/t/1042) in the Phaser forum.
 
 ## Phaser Starter Template
 
