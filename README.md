@@ -16,9 +16,9 @@ Using Phaser v3.21.0 and Spine v3.8.78
 - Change Animations
 - Change Attachments
 
-[Play the demo](https://s3.eu-central-1.amazonaws.com/phaser3-typescript/spine-example/index.html)
+[Play the demo](https://yandeu.github.io/phaser3-spine-example/)
 
-<a href="https://s3.eu-central-1.amazonaws.com/phaser3-typescript/spine-example/index.html"><img src="screenshots/screenshot.png" alt="header" width="452"></a>
+<a href="https://yandeu.github.io/phaser3-spine-example/"><img src="screenshots/screenshot.png" alt="header" width="452"></a>
 
 ## Questions?
 
