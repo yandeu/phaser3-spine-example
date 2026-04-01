@@ -1,0 +1,20 @@
+{
+  "name": "phaser3-spine-example",
+  "version": "3.21.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yandeu/phaser3-spine-example.git"
+  },
+  "keywords": [],
+  "author": "Yannick Deubel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yandeu/phaser3-spine-example/issues"
+  },
+  "homepage": "https://github.com/yandeu/phaser3-spine-example#readme"
+}
